@@ -13,7 +13,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === 'splay') {
+  if (message.content === 'spy join') {
     // Note that this will only work if the message was sent in a guild
     // and the author is actually in a voice channel.
     // You might want to check for all that stuff first
