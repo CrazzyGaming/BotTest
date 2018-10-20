@@ -6,9 +6,6 @@ from discord.ext import commands
 client.on('ready', () => {
     console.log('I am ready!');
     
-TOKEN = 'NTAzMjQyNjc2MzU1ODU4NDMy.Dq0JHA.Y13EmiJZFB9VkZldgUomuBw-x_0'
-client = commands.Bot(command_prefix = 's')
-    
 });
 
 client.on('message', message => {
@@ -16,6 +13,18 @@ client.on('message', message => {
     	message.reply('Salut, sunt un Spy Bot creat de DariusOT.');
   	}
 });
+
+client.on('message', message => {
+  if (message.content === 'splay') {
+    // Note that this will only work if the message was sent in a guild
+    // and the author is actually in a voice channel.
+    // You might want to check for all that stuff first
+    const channel = message.member.voiceChannel;
+
+    channel.join()
+    .then(connection => console.log('Connected!'))
+    .catch(console.error);
+  }
 
 
 
