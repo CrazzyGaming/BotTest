@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+import os, discord
+from discord.ext.commands import Bot
 
 client.on('ready', () => {
     console.log('I am ready!');
