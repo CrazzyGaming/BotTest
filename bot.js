@@ -3,12 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-   bot.user.setStatus('available') // Can be 'available', 'idle', 'dnd', or 'invisible'
-    bot.user.setPresence({
-        game: {
-            name: '/skemavanguard',
-            type: 0
-        }
+    bot.user.setGame('/skemavanguard')
     
 });
 
