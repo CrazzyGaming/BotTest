@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setGame("/skemavanguard");
+    client.user.setPresence({ game: { name: '/skemavanguard', type: 0 } })
     
 });
 
