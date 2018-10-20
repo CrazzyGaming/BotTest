@@ -11,6 +11,16 @@ client.on('message', message => {
   	}
 });
 
+lient.on('ready', () => {
+    // Set bot status to: "Playing with JavaScript"
+    client.user.setActivity("/skemavanguard")
+
+    // Alternatively, you can set the activity to any of the following:
+    // PLAYING, STREAMING, LISTENING, WATCHING
+    // For example:
+    // client.user.setActivity("TV", {type: "WATCHING"})
+})
+
 
 
 
