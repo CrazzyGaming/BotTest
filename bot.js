@@ -13,7 +13,7 @@ client.on('message', message => {
 
 lient.on('ready', () => {
     // Set bot status to: "Playing with JavaScript"
-    client.user.setActivity("/skemavanguard")
+    client.user.setActivity("/skemavanguard, {type: "PLAYING"}")
 
     // Alternatively, you can set the activity to any of the following:
     // PLAYING, STREAMING, LISTENING, WATCHING
