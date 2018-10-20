@@ -2,6 +2,17 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
+    channel = client.channels.find('name', 'Cocioaba del Darius');
+
+  channel.join()
+  .then(connection => console.log('Connected'))
+  .catch(console.error);
+});
+
+client.on('message', message => {
+  //...
+});
+
     console.log('I am ready!');
     
 });
@@ -11,19 +22,6 @@ client.on('message', message => {
     	message.reply('Salut, sunt un Spy Bot creat de DariusOT.');
   	}
 });
-
-client.on('message', message => {
-  if (message.content === 'spy join') {
-    // Note that this will only work if the message was sent in a guild
-    // and the author is actually in a voice channel.
-    // You might want to check for all that stuff first
-    const channel = message.member.voiceChannel;
-
-    channel.join()
-    .then(connection => console.log('Connected!'))
-    .catch(console.error);
-  }
-
 
 
 
