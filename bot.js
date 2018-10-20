@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'spy cine esti?') {
-    	message.reply('Salut, sunt un spy bot creat de DariusOT.');
+    	message.reply('Salut, sunt un Spy Bot creat de DariusOT.');
   	}
 });
 
