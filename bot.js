@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-import os, discord
-from discord.ext.commands import Bot
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -13,14 +11,6 @@ client.on('message', message => {
     	message.reply('Salut, sunt un Spy Bot creat de DariusOT.');
   	}
 });
-
-@client.event
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print('------')
-    await client.change_presence(game=discord.Game(name="/skemavanguard"))
 
 
 
