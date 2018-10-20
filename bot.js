@@ -11,7 +11,7 @@ client.on('message', message => {
   	}
 });
 
-bot.on('ready', () => { bot.user.setGame('/skemavanguard') })
+client.user.setGame('/skemavanguard')
 
 
 
