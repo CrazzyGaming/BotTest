@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
+    client.user.setActivity('/skemavanguard', {type: 'WATCHING'});
     console.log('I am ready!');
     
 });
@@ -11,9 +12,6 @@ client.on('message', message => {
     	message.reply('Salut, sunt un Spy Bot creat de DariusOT.');
   	}
 });
-
-client.on('ready', () => {
-    bot.user.setGame('/skemavanguard')
 
 
 
