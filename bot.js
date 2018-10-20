@@ -6,20 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!panel') {
-    	message.reply('Panelul este in lucru.');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '!forum') {
-    	message.reply('Forumul este in lucru.');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === '!ip') {
-    	message.reply('Serverul este in lucru.');
+    if (message.content === 'spy cine esti?') {
+    	message.reply('Salut, sunt un spy bot creat de DariusOT.');
   	}
 });
 
